@@ -15,14 +15,54 @@
   <body>
     <div class="container-fluid">
       <!-- New Mail Button & Search Bar -->
-      <div class="row">
+      <div class="row pt-2 pb-2 pt-md-0 pb-md-0">
+        <!-- Offcanvas -->
+        <div class="col d-flex d-md-none align-items-center">
+          <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            Menu
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                Backdrop with scrolling
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                Try scrolling the rest of the page to see this option in action.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <!-- New Mail Button -->
-        <div class="col-2 d-flex align-items-center">
+        <div
+          class="col d-flex align-items-center col-md-4 col-lg-2 justify-content-end justify-content-md-start"
+        >
           <button type="button" class="btn btn-primary">New Mail</button>
         </div>
 
         <!-- Search Bar -->
-        <div class="col">
+        <div class="col d-none d-md-inline">
           <nav class="navbar">
             <div class="container-fluid">
               <form class="d-flex" role="search">
@@ -44,7 +84,7 @@
       <!-- Folders, Emails, Content -->
       <div class="row">
         <!-- Folders -->
-        <div class="col-2">
+        <div class="col-4 col-lg-2 d-none d-md-inline">
           <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -238,7 +278,7 @@
         </div>
 
         <!-- Content -->
-        <div class="col">
+        <div class="col d-none d-lg-inline">
           <!-- Profile -->
           <div class="d-flex flex-column gap-5">
             <div class="row">
