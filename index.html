@@ -14,6 +14,54 @@
   </head>
   <body>
     <div class="container-fluid">
+      <!-- Header -->
+      <div class="row bg-primary-subtle">
+        <!-- Logo -->
+        <div class="col d-flex align-items-center">
+          <img src="/assets/email.svg" alt="email-logo" width="32px" />
+          <span class="fs-4 text-black">EMAIL</span>
+        </div>
+
+        <!-- Profile Button -->
+        <div class="col d-flex justify-content-end align-items-center">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img src="/assets/profile-1.svg" alt="" width="32px" />
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Profile</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                <a
+                  href="#"
+                  class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Settings</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- New Mail Button & Search Bar -->
       <div class="row pt-2 pb-2 pt-md-0 pb-md-0">
         <!-- Offcanvas -->
